@@ -1,0 +1,23 @@
+spring:
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+  datasource:
+    url: jdbc:mysql://localhost:3306/schooldb
+    username: admin
+    password: 1234
+    
+  #zipkin:
+    #base-url: http://10.11.201.180:9411/
+
+
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: http://10.11.201.180:8761/eureka/
+
+  instance:
+    hostname: 10.11.201.180
